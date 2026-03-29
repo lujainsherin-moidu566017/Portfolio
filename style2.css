@@ -1,0 +1,171 @@
+/* Teal + Coral + Grey Theme */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f1f5f4; /* light grey */
+    color: #374151;
+}
+
+/* Navigation bar */
+nav {
+    background: #0f766e; /* teal */
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+nav h2 {
+    font-weight: 700;
+    color: #ffffff; /* ensure visible on teal background */
+    letter-spacing: 0.5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: #e6fffb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #ffd6cf; /* coral hover */
+}
+
+/* Container */
+.container {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 950px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #0f766e;
+    margin-bottom: 20px;
+}
+
+/* Profile Image */
+#about img {
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 5px solid #14b8a6;
+}
+
+/* Skills */
+.skill-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill-list li {
+    background: #14b8a6; /* teal */
+    color: white;
+    padding: 12px 22px;
+    margin: 8px;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+
+
+/* Projects */
+.project {
+    background: white;
+    padding: 28px;
+    margin: 25px auto;
+    width: 75%;
+    border-radius: 14px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+    transition: 0.25s;
+    border-left: 6px solid #14b8a6;
+}
+
+.project:hover {
+    transform: translateY(-6px);
+    border-left: 6px solid #ff7f6e;
+}
+
+.project h3 {
+    color: #0f766e;
+}
+
+.project a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Contact links */
+#contact a {
+    color: #ff7f6e;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Button */
+button {
+    background: linear-gradient(135deg,#14b8a6,#ff7f6e);
+    color: white;
+    padding: 13px 26px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 18px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: #374151; /* grey */
+    color: white;
+    padding: 18px;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 95%;
+    }
+
+    .skill-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* icon spacing */
+i {
+    margin-right: 8px;
+}
